@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_box {
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one {
+    position: absolute;
+    left: 10px;
+    line-height: 60px;
+    font-size: 1.5em;
+}
+
+.sidebar_menu {
+    height: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 10px rgba(83, 33, 33, 0.121);
+    position: fixed;
+    border-radius: 5px;
+    left: -300px;
+    transition: left .5s linear;
+}
+
+.sidebar_menu .logo{
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+    box-shadow: 0px 2px 10px rgba(117, 113, 113, 0.341);
+}
+
+.sidebar_menu .logo a {
+    font-size: 24px;
+    margin-left: 85px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+.btn_two {
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    line-height: 60px;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.menu li{
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li:hover {
+    box-shadow: 0px 0px 19px rgba(117, 113, 113, 0.341);
+}
+
+.social_media {
+    position: absolute;
+    bottom: 20px;
+    left: 80px
+}
+
+.social_media ul a i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.social_media ul a i:hover {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+
+#check {
+    display: none;
+}
+
+#check:checked ~.sidebar_menu {
+    left: 0;
+}
+
+#check:checked ~.btn_one {
+    display: none;
+}
+
